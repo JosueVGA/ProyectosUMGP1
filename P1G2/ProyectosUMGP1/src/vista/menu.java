@@ -24,13 +24,28 @@ public class menu extends javax.swing.JFrame {
         this.mod = mod;
 
         if (mod.getIdTipo() == 1) {
-            menuProductos.setVisible(true);
-            menuProveedores.setVisible(true);
+            menuProductos.setVisible(false);
+              menuProveedores.setVisible(false);
         } else {
             menuProveedores.setVisible(false);
            menuProductos.setVisible(false);
+            
         }
-
+        if (mod.getIdTipo() == 2) {
+            menuProductos.setVisible(false);
+            menuProveedores.setVisible(true);
+        //} else {
+          //  menuProveedores.setVisible(false);
+           //menuProductos.setVisible(false);
+        }
+            if (mod.getIdTipo() == 3) {
+            menuProductos.setVisible(true);
+            menuProveedores.setVisible(false);
+        //} else {
+          //  menuProveedores.setVisible(false);
+           //menuProductos.setVisible(false);
+        //}
+            }
     }
 
     @SuppressWarnings("unchecked")
